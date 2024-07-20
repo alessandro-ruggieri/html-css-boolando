@@ -32,6 +32,11 @@ ul, ol {
    flex-wrap: wrap;
 }
 
+.col-33 {
+   width: calc(100%/3);
+   padding:10px;
+}
+
 .col-50 {
    width:50%;
    display: flex;
@@ -82,6 +87,38 @@ ul, ol {
    display: flex;
    gap: 10px;
    font-weight: bold;
+}
+
+/* BODY */
+
+.welcome {
+   text-align: center;
+   padding: 50px 0px;
+   line-height: 2.5em;
+}
+
+.brand {
+   font-style: italic;
+}
+
+.product {
+   font-weight: bold;
+}
+
+.description {
+   border: 1px solid #e8e8e8;
+   margin-top:-5px;
+   padding:10px 8px;
+}
+
+.price {
+ font-weight: bold;
+ color:red;
+}
+
+.ex-price {
+text-decoration: line-through;
+padding-right: 5px;
 }
 
 /* FOOTER */
