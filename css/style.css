@@ -1,0 +1,72 @@
+* {
+   margin:0;
+   padding:0;
+   box-sizing: border-box;
+}
+
+html {
+   font-family: "Quicksand", sans-serif;
+}
+
+a {
+   text-decoration: none;
+   color: currentColor;
+}
+
+img {
+   max-width: 100%;
+}
+
+ul, ol {
+   list-style: none;
+}
+/* LAYOUT */
+
+.container {
+   max-width: 80%;
+   margin: 0 auto;
+}
+
+.row {
+   display:flex;
+   flex-wrap: wrap;
+}
+
+.column {
+
+}
+
+/* HEADER */
+
+.page-header {
+   background-color: orange;
+   display: flex;
+   color: white;
+   justify-content: space-around;
+   align-items: center;
+   padding: 8px 0px;
+}
+
+.logo-wrapper {
+   flex-shrink: 0;
+   font-size: 0;
+}
+
+.logo {
+ height: 35px;
+}
+
+.icons-wrapper {
+   flex-shrink: 0;
+   font-size: 0;
+}
+
+.icons {
+   height:30px;
+}
+
+.main-menu {
+   display: flex;
+   gap: 10px;
+   font-weight: bold;
+}
