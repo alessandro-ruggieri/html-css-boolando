@@ -1,3 +1,5 @@
+/* RESET RULE */
+
 * {
    margin:0;
    padding:0;
@@ -20,16 +22,18 @@ img {
 ul, ol {
    list-style: none;
 }
+
 /* LAYOUT */
 
 .container {
-   max-width: 900px;
+   max-width: 1000px;
    margin: 0 auto;
 }
 
 .row {
    display:flex;
    flex-wrap: wrap;
+   justify-content: space-between;
 }
 
 .col-33 {
@@ -42,39 +46,43 @@ ul, ol {
    display: flex;
    flex-direction: column;
    flex-wrap: wrap;
-   justify-content: center;
-}
-
-.left {
-
-}
-
-.right {
-
+   justify-content: space-between;
+   row-gap: 5px;
 }
 
 /* HEADER */
 
 .page-header {
    background-color: rgb(255, 102, 0);
-   display: flex;
    color: white;
-   justify-content: space-around;
-   align-items: center;
-   padding: 8px 0px;
+}
+
+.navbar {
+   display: flex;
+   justify-content: flex-start;
 }
 
 .logo-wrapper {
+   display: flex;
+   justify-content: center;
    flex-shrink: 0;
    font-size: 0;
 }
 
 .logo {
- height: 35px;
+   /* height: 35px; */
+   max-height: 35px;
+   min-height: 20px;
+   min-width: 80px;
+}
+
+.shop-icon {
+   display:flex;
+   flex-wrap: wrap;
+   justify-content: flex-end;
 }
 
 .icons-wrapper {
-   flex-shrink: 0;
    font-size: 0;
 }
 
@@ -85,8 +93,15 @@ ul, ol {
 
 .main-menu {
    display: flex;
+   flex-wrap: wrap;
    gap: 10px;
    font-weight: bold;
+}
+
+.menu {
+   display:flex;
+   flex-wrap: wrap;
+   align-items: center;
 }
 
 /* BODY */
@@ -98,6 +113,10 @@ body {
 .welcome {
    text-align: center;
    padding: 40px 0px;
+}
+
+.products {
+   padding-bottom: 40px;
 }
 
 .brand {
@@ -130,15 +149,14 @@ padding-right: 5px;
 .page-footer {
    background-color:black;
    color: white;
-   margin-top:50px;
-   display: flex;
-   justify-content: space-around;
+   padding: 15px;
 }
 
 .footer-menu {
    font-size: 14px;
    font-style: italic;
    display: flex;
+   flex-wrap: wrap;
    gap: 10px;
 }
 
@@ -146,7 +164,12 @@ padding-right: 5px;
    height:25px;
 }
 
-.foot-container {
-   width:100%;
-   margin: 0 auto;
+.left {
+   align-content: flex-start;
+   align-items: flex-start;
+}
+
+.right {
+   align-content: flex-end;
+   align-items: center;
 }
