@@ -91,10 +91,13 @@ ul, ol {
 
 /* BODY */
 
+body {
+   background-color: aliceblue;
+}
+
 .welcome {
    text-align: center;
-   padding: 50px 0px;
-   line-height: 2.5em;
+   padding: 40px 0px;
 }
 
 .brand {
@@ -107,6 +110,7 @@ ul, ol {
 
 .description {
    border: 1px solid #e8e8e8;
+   background-color: #e8e8e8;
    margin-top:-5px;
    padding:10px 8px;
 }
@@ -126,10 +130,7 @@ padding-right: 5px;
 .page-footer {
    background-color:black;
    color: white;
-   position: fixed;
-   left:0;
-   bottom:0;
-   width: 100%;
+   margin-top:50px;
    display: flex;
    justify-content: space-around;
 }
